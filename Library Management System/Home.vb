@@ -63,8 +63,9 @@ Public Class Home
 
     Public publicBookTitle As String
     Private Sub Home_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        RichTextBox1.ReadOnly = True
         addReview.Enabled = False
+        viewReviewsBtn.Enabled = False
         centerAll(Me)
         bookTitleChange.Hide()
         authorTextChange.Hide()
@@ -207,7 +208,7 @@ Public Class Home
         authorTextChange.Dock = DockStyle.Fill
 
         publicBookTitle = title
-
+        viewReviewsBtn.Enabled = True
         addReview.Enabled = True
     End Sub
 
@@ -320,6 +321,11 @@ Public Class Home
 
     Private Sub Home_Activated(sender As Object, e As EventArgs) Handles MyBase.Activated
         updateDgv()
+        clearTextbox(Me)
+        bookTitleChange.Hide()
+        authorTextChange.Hide()
+        addReview.Enabled = False
+        viewReviewsBtn.Enabled = False
     End Sub
 
     Public title As String
@@ -361,5 +367,13 @@ Public Class Home
         dr.Close()
         connection.Close()
 
+    End Sub
+
+    Private Sub homeClearBtn_Click(sender As Object, e As EventArgs) Handles homeClearBtn.Click
+        clearTextbox(Me)
+        bookTitleChange.Hide()
+        authorTextChange.Hide()
+        addReview.Enabled = False
+        viewReviewsBtn.Enabled = False
     End Sub
 End Class

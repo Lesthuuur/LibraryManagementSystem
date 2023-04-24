@@ -2,13 +2,13 @@
 
 Public Class viewReviews
     Private Sub viewReviews_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        reviewRichTxtbox.ReadOnly = True
         ratingsLblChanged.Hide()
         bookTitleChangeLbl.Text = Home.publicBookTitle
         Dim conn As New MySqlConnection("Server=127.0.0.1;Port=3307;Database=librarymanagementsystem;Uid=root;Pwd=;")
         Dim query As String
         Dim command As New MySqlCommand
         Dim dataAdapter As New MySqlDataAdapter
-        Dim dataReader As MySqlDataReader
         Dim dataTable As New DataTable
         conn.Open()
 

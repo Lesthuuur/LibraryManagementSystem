@@ -34,6 +34,9 @@ Public Class reviews
         ElseIf Not Integer.TryParse(ratingTxtbox.Text, rating) Then
             MessageBox.Show("Invalid Input! Input must be integer")
 
+        ElseIf rating < 1 Or rating > 10 Then
+            MessageBox.Show("Invalid rating. Please enter a rating between 1 and 10.")
+
         ElseIf reviewRichTxtbox.Text.Length > 1000 Then
             MessageBox.Show("Reviews reach the limit!")
 

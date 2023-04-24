@@ -57,6 +57,7 @@ Partial Class Home
         Me.allBtn = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.BindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.homeClearBtn = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2GroupBox1.SuspendLayout()
         CType(Me.accountsPicBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Guna2Panel2.SuspendLayout()
@@ -262,11 +263,11 @@ Partial Class Home
         Me.readBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.readBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.readBtn.FillColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(71, Byte), Integer))
-        Me.readBtn.Font = New System.Drawing.Font("Rubik SemiBold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.readBtn.Font = New System.Drawing.Font("Rubik", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.readBtn.ForeColor = System.Drawing.Color.White
-        Me.readBtn.Location = New System.Drawing.Point(680, 590)
+        Me.readBtn.Location = New System.Drawing.Point(672, 588)
         Me.readBtn.Name = "readBtn"
-        Me.readBtn.Size = New System.Drawing.Size(168, 45)
+        Me.readBtn.Size = New System.Drawing.Size(138, 39)
         Me.readBtn.TabIndex = 10
         Me.readBtn.Text = "READ"
         '
@@ -333,11 +334,11 @@ Partial Class Home
         Me.addReview.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.addReview.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.addReview.FillColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(71, Byte), Integer))
-        Me.addReview.Font = New System.Drawing.Font("Rubik SemiBold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.addReview.Font = New System.Drawing.Font("Rubik", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.addReview.ForeColor = System.Drawing.Color.White
-        Me.addReview.Location = New System.Drawing.Point(879, 589)
+        Me.addReview.Location = New System.Drawing.Point(817, 588)
         Me.addReview.Name = "addReview"
-        Me.addReview.Size = New System.Drawing.Size(168, 45)
+        Me.addReview.Size = New System.Drawing.Size(138, 39)
         Me.addReview.TabIndex = 14
         Me.addReview.Text = "ADD REVIEW"
         '
@@ -348,11 +349,11 @@ Partial Class Home
         Me.viewReviewsBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.viewReviewsBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.viewReviewsBtn.FillColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(71, Byte), Integer))
-        Me.viewReviewsBtn.Font = New System.Drawing.Font("Rubik SemiBold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.viewReviewsBtn.Font = New System.Drawing.Font("Rubik", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.viewReviewsBtn.ForeColor = System.Drawing.Color.White
-        Me.viewReviewsBtn.Location = New System.Drawing.Point(1085, 590)
+        Me.viewReviewsBtn.Location = New System.Drawing.Point(968, 589)
         Me.viewReviewsBtn.Name = "viewReviewsBtn"
-        Me.viewReviewsBtn.Size = New System.Drawing.Size(168, 45)
+        Me.viewReviewsBtn.Size = New System.Drawing.Size(138, 39)
         Me.viewReviewsBtn.TabIndex = 15
         Me.viewReviewsBtn.Text = "VIEW REVIEWS"
         '
@@ -482,11 +483,27 @@ Partial Class Home
         Me.Label2.TabIndex = 58
         Me.Label2.Text = "OVERVIEW"
         '
+        'homeClearBtn
+        '
+        Me.homeClearBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.homeClearBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.homeClearBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.homeClearBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.homeClearBtn.FillColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(71, Byte), Integer))
+        Me.homeClearBtn.Font = New System.Drawing.Font("Rubik", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.homeClearBtn.ForeColor = System.Drawing.Color.White
+        Me.homeClearBtn.Location = New System.Drawing.Point(1122, 590)
+        Me.homeClearBtn.Name = "homeClearBtn"
+        Me.homeClearBtn.Size = New System.Drawing.Size(138, 39)
+        Me.homeClearBtn.TabIndex = 59
+        Me.homeClearBtn.Text = "CLEAR"
+        '
         'Home
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1267, 650)
+        Me.Controls.Add(Me.homeClearBtn)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.allBtn)
         Me.Controls.Add(Me.viewReviewsBtn)
@@ -553,4 +570,5 @@ Partial Class Home
     Friend WithEvents romanceGradBtn As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents allBtn As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents Label2 As Label
+    Friend WithEvents homeClearBtn As Guna.UI2.WinForms.Guna2Button
 End Class
