@@ -203,4 +203,20 @@ Public Class manageBooks
     Private Sub showAll_Click(sender As Object, e As EventArgs) Handles showAll.Click
         updateDgv()
     End Sub
+
+    Private Sub openFileDialog_Click(sender As Object, e As EventArgs) Handles openFileDialog.Click
+        Dim openFileDialog1 As New OpenFileDialog()
+
+        ' Set the default directory and filter for the OpenFileDialog
+        openFileDialog1.InitialDirectory = "C:\"
+        openFileDialog1.Filter = "PDF Files (*.pdf)|*.pdf|All Files (*.*)|*.*"
+        openFileDialog1.FilterIndex = 1
+        openFileDialog1.RestoreDirectory = True
+
+        ' Show the OpenFileDialog and check if the user clicked OK
+        If openFileDialog1.ShowDialog() = System.Windows.Forms.DialogResult.OK Then
+            ' Get the selected file path and display it in the book path textbox
+            pathTxtbox.Text = openFileDialog1.FileName
+        End If
+    End Sub
 End Class
