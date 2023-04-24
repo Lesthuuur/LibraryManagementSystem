@@ -1,0 +1,41 @@
+[33mcommit 8193fb44678e4e1b8da90a0990401b959858a1c8[m[33m ([m[1;36mHEAD -> [m[1;32mmartinez[m[33m)[m
+Author: Lesthuuur <104022740+Lesthuuur@users.noreply.github.com>
+Date:   Mon Apr 3 20:26:30 2023 +0800
+
+    d ko alam anong binago ko ditooo
+
+[33mcommit 74b0856682882dc2723910820479591aad010028[m[33m ([m[1;31morigin/martinez[m[33m)[m
+Author: Lesthuuur <104022740+Lesthuuur@users.noreply.github.com>
+Date:   Sat Apr 1 23:23:06 2023 +0800
+
+    connect to db and studentLogin verification from db
+
+[33mcommit 449af6a53af1d2edffc950cc33d1f922828c7ef3[m
+Author: Lesthuuur <104022740+Lesthuuur@users.noreply.github.com>
+Date:   Fri Mar 31 23:13:20 2023 +0800
+
+    create function for connection
+
+[33mcommit e0574e7228bbc034849db0d878da51700c569313[m
+Author: Lesthuuur <104022740+Lesthuuur@users.noreply.github.com>
+Date:   Wed Mar 29 21:59:05 2023 +0800
+
+    change background color
+
+[33mcommit 32cac8c75c4f0ac002e4ad82624f91495b43cd40[m[33m ([m[1;32mmain[m[33m)[m
+Author: Lesthuuur <104022740+Lesthuuur@users.noreply.github.com>
+Date:   Wed Mar 29 21:49:20 2023 +0800
+
+    trial commmit
+
+[33mcommit bb3ca7b4cb42cd8f8c6748953af30bb51b81dc19[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Retzelio <93633286+Retzelio@users.noreply.github.com>
+Date:   Wed Mar 29 21:41:12 2023 +0800
+
+    added login button
+
+[33mcommit e14faa059f265335089eec01464037e72c336a73[m
+Author: Retzelio <93633286+Retzelio@users.noreply.github.com>
+Date:   Wed Mar 29 15:29:08 2023 +0800
+
+    Initial commit
