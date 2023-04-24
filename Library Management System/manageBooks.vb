@@ -169,10 +169,10 @@ Public Class manageBooks
 
         Try
             openConnnection()
-            sql = "SELECT title, author, genre, description, path FROM books WHERE author LIKE @search OR title LIKE @title"
+            sql = "SELECT title, author, genre, description, path FROM books WHERE author LIKE @search OR title LIKE @search OR genre LIKE @search"
             cmd = New MySqlCommand(sql, connection)
             cmd.Parameters.AddWithValue("@search", searchTxtbox.Text)
-            cmd.Parameters.AddWithValue("@title", searchTxtbox.Text)
+
             da = New MySqlDataAdapter(cmd)
             dt = New DataTable
             da.Fill(dt)
