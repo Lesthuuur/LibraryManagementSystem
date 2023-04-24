@@ -4,7 +4,9 @@ Public Class viewReviews
     Private Sub viewReviews_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         fixSize(Me)
         reviewRichTxtbox.ReadOnly = True
+
         ratingsLblChanged.Hide()
+        dateTimeLblChange.Hide()
         bookTitleChangeLbl.Text = Home.publicBookTitle
         Dim conn As New MySqlConnection("Server=127.0.0.1;Port=3307;Database=librarymanagementsystem;Uid=root;Pwd=;")
         Dim query As String
@@ -19,7 +21,7 @@ Public Class viewReviews
             query = "SELECT r.student_id, b.title, r.review, r.ratings, r.time_date 
              FROM reviews r 
              INNER JOIN books b ON r.book_id = b.id
-                WHERE b.title = @bookTitle"
+             WHERE b.title = @bookTitle"
             command = New MySqlCommand(query, conn)
             command.Parameters.AddWithValue("@bookTitle", Home.publicBookTitle)
             dataAdapter = New MySqlDataAdapter(command)
