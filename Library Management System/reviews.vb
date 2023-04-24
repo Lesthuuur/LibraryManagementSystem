@@ -9,7 +9,7 @@ Public Class reviews
 
 
     Private Sub reviews_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        fixSize(Me)
         studentIDChangeLbl.Text = studentLogin.studenID
         bookTitleChangeLbl.Text = Home.publicBookTitle
 

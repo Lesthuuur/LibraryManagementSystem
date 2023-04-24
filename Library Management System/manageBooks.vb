@@ -30,7 +30,9 @@ Public Class manageBooks
     End Sub
 
     Private Sub ManageBooks_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        fixSize(Me)
         centerAll(Me)
+        titleTxtbox.Select()
         openConnnection()
 
         Try
@@ -46,7 +48,6 @@ Public Class manageBooks
                 connection.Close()
             Next
             dr.Close()
-
 
         Catch ex As Exception
             MessageBox.Show(ex.Message.ToString())
@@ -79,7 +80,6 @@ Public Class manageBooks
 
         If titleTxtbox.Text = "" Or authorTxtbox.Text = "" Or pathTxtbox.Text = "" Then
             MessageBox.Show("All fields are required")
-
         Else
             Try
                 sql = "INSERT INTO books(title, author, genre, description, path) VALUES(@title, @author, @genre, @description, @path)"
@@ -100,8 +100,6 @@ Public Class manageBooks
                 MessageBox.Show(ex.Message.ToString())
             End Try
             connection.Close()
-
-
         End If
 
 
@@ -127,9 +125,6 @@ Public Class manageBooks
         genreTxtbox.Text = genre
         descriptionRichTxtbox.Text = description
         pathTxtbox.Text = path
-
-
-
     End Sub
 
     Private Sub manageBooksUpdateButton_Click(sender As Object, e As EventArgs) Handles manageBooksUpdateButton.Click
@@ -172,7 +167,6 @@ Public Class manageBooks
 
     Private Sub manageBooksSearchButton_Click(sender As Object, e As EventArgs) Handles manageBooksSearchButton.Click
 
-
         Try
             openConnnection()
             sql = "SELECT title, author, genre, description, path FROM books WHERE author LIKE @search OR title LIKE @title"
@@ -194,10 +188,6 @@ Public Class manageBooks
             MessageBox.Show("Error: " & ex.Message)
         End Try
         connection.Close()
-    End Sub
-
-    Private Sub Label2_Leave(sender As Object, e As EventArgs) Handles Label2.Leave
-
     End Sub
 
     Private Sub showAll_Click(sender As Object, e As EventArgs) Handles showAll.Click

@@ -10,7 +10,6 @@ Public Class Home
     Public path As String
     Public dr As MySqlDataReader
 
-
     Private Sub updateDgv()
         dgv.Rows.Clear()
         openConnnection()
@@ -27,8 +26,6 @@ Public Class Home
 
             Next
             dr.Close()
-
-
         Catch ex As Exception
             MessageBox.Show(ex.Message.ToString())
         End Try
@@ -36,7 +33,6 @@ Public Class Home
         connection.Close()
     End Sub
     Private Sub Guna2GradientButton1_Click(sender As Object, e As EventArgs) Handles selfhelpGradientBtn.Click
-
         openConnnection()
         Try
             sql = "SELECT * FROM books WHERE title = 'SELF HELP'"
@@ -48,8 +44,6 @@ Public Class Home
                 bookTitleChange.Text() = dr.Item(1).ToString
                 authorTextChange.Text() = dr.Item(2).ToString
                 RichTextBox1.Text() = dr.Item(5).ToString
-
-
             End While
             dr.Close()
             connection.Close()
@@ -63,6 +57,7 @@ Public Class Home
 
     Public publicBookTitle As String
     Private Sub Home_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        fixSize(Me)
         RichTextBox1.ReadOnly = True
         addReview.Enabled = False
         viewReviewsBtn.Enabled = False
@@ -83,8 +78,6 @@ Public Class Home
 
         ElseIf librarianLogin.userType = "librarian" Then
             accountsPicBox.Show()
-
-
         End If
 
         openConnnection()
@@ -95,15 +88,11 @@ Public Class Home
             dt = New DataTable
             da.Fill(dt)
             dr = cmd.ExecuteReader()
-
-
             For Each row As DataRow In dt.Rows
                 dgv.Rows.Add(row("title"), row("author"), row("description"), row("path"))
                 connection.Close()
             Next
             dr.Close()
-
-
         Catch ex As Exception
             MessageBox.Show(ex.Message.ToString())
         End Try
@@ -115,7 +104,6 @@ Public Class Home
     End Sub
 
     Private Sub readBtn_Click_1(sender As Object, e As EventArgs) Handles readBtn.Click
-
         Dim filePath As String = Me.path
         Dim processInfo As New ProcessStartInfo()
         processInfo.FileName = filePath
@@ -124,7 +112,6 @@ Public Class Home
         Dim process As New Process()
         process.StartInfo = processInfo
         process.Start()
-
     End Sub
 
     Private Sub romanceGradBtn_Click(sender As Object, e As EventArgs) Handles romanceGradBtn.Click
@@ -137,7 +124,6 @@ Public Class Home
             dt = New DataTable
             da.Fill(dt)
             dr = cmd.ExecuteReader()
-
 
             For Each row As DataRow In dt.Rows
                 dgv.Rows.Add(row("title"), row("author"), row("description"), row("path"))
@@ -164,7 +150,6 @@ Public Class Home
             da.Fill(dt)
             dr = cmd.ExecuteReader()
 
-
             For Each row As DataRow In dt.Rows
                 dgv.Rows.Add(row("title"), row("author"), row("description"), row("path"))
                 connection.Close()
@@ -179,11 +164,7 @@ Public Class Home
         connection.Close()
     End Sub
 
-
-
     Private Sub dgv_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgv.CellDoubleClick
-
-
         Dim rowIndex As Integer = dgv.SelectedRows(0).Index
 
         ' Get the values of the title and author columns for the selected row
@@ -224,7 +205,6 @@ Public Class Home
             da.Fill(dt)
             dr = cmd.ExecuteReader()
 
-
             For Each row As DataRow In dt.Rows
                 dgv.Rows.Add(row("title"), row("author"), row("description"), row("path"))
                 connection.Close()
@@ -237,8 +217,6 @@ Public Class Home
         End Try
         connection.Close()
     End Sub
-
-
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles accountsPicBox.Click
         accounts.Show()
@@ -263,10 +241,6 @@ Public Class Home
         Else
             isClosing = False
         End If
-
-
-
-
 
     End Sub
 
@@ -310,10 +284,7 @@ Public Class Home
         End Try
         connection.Close()
 
-
     End Sub
-
-
 
     Private Sub allBtn_Click(sender As Object, e As EventArgs) Handles allBtn.Click
         updateDgv()
@@ -333,7 +304,6 @@ Public Class Home
     Private Sub addReview_Click(sender As Object, e As EventArgs) Handles addReview.Click
         Me.Hide()
         reviews.Show()
-
     End Sub
 
     Private Sub viewReviewsBtn_Click(sender As Object, e As EventArgs) Handles viewReviewsBtn.Click
@@ -353,7 +323,6 @@ Public Class Home
             da.Fill(dt)
             dr = cmd.ExecuteReader()
 
-
             For Each row As DataRow In dt.Rows
                 dgv.Rows.Add(row("title"), row("author"), row("description"), row("path"))
                 connection.Close()
@@ -366,9 +335,7 @@ Public Class Home
         End Try
         dr.Close()
         connection.Close()
-
     End Sub
-
     Private Sub homeClearBtn_Click(sender As Object, e As EventArgs) Handles homeClearBtn.Click
         clearTextbox(Me)
         bookTitleChange.Hide()

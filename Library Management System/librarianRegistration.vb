@@ -12,6 +12,7 @@ Public Class librarianRegistration
     End Sub
 
     Private Sub librarianRegistration_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        fixSize(Me)
         centerAll(Me)
         welcomePage.Hide()
         librarianLogin.Hide()

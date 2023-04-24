@@ -67,6 +67,7 @@ Public Class studentLogin
 
     Private Sub studentLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         centerAll(Me)
+        fixSize(Me)
         studentUserLogTextBox.Select()
     End Sub
 

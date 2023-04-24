@@ -28,6 +28,7 @@ Public Class manageStudents
         connection.Close()
     End Sub
     Private Sub manageStudents_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        fixSize(Me)
         centerAll(Me)
         openConnnection()
 

@@ -29,6 +29,8 @@ Public Class manageLibrarian
     End Sub
 
     Private Sub manageUsers_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        librarianLname.Select()
+        fixSize(Me)
         centerAll(Me)
         openConnnection()
 
@@ -58,7 +60,7 @@ Public Class manageLibrarian
         accounts.Show()
     End Sub
     Private Sub manageLibrarian_Activated(sender As Object, e As EventArgs) Handles MyBase.Activated
-
+        librarianLname.Select()
     End Sub
 
     Private Sub manageUsersUpdateButton_Click(sender As Object, e As EventArgs) Handles manageUsersUpdateButton.Click

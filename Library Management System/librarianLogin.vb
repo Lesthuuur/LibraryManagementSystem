@@ -73,6 +73,7 @@ Public Class librarianLogin
         welcomePage.Show()
     End Sub
     Private Sub librarianLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        fixSize(Me)
         centerAll(Me)
     End Sub
 

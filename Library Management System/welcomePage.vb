@@ -10,6 +10,7 @@
     End Sub
     Private Sub welcomePage_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         centerAll(Me)
+        fixSize(Me)
     End Sub
 
 

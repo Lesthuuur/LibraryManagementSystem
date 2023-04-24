@@ -25,6 +25,7 @@ Partial Class studentRegistration
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(studentRegistration))
         Me.studentReg1Panel = New System.Windows.Forms.Panel()
+        Me.showPassLbl = New System.Windows.Forms.Label()
         Me.reenterPass = New System.Windows.Forms.Label()
         Me.reEnterPassTxtbox = New System.Windows.Forms.TextBox()
         Me.clearBtn = New Guna.UI2.WinForms.Guna2Button()
@@ -51,7 +52,6 @@ Partial Class studentRegistration
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2Elipse1 = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
-        Me.showPassLbl = New System.Windows.Forms.Label()
         Me.studentReg1Panel.SuspendLayout()
         Me.Guna2GroupBox1.SuspendLayout()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -88,12 +88,24 @@ Partial Class studentRegistration
         Me.studentReg1Panel.Size = New System.Drawing.Size(510, 468)
         Me.studentReg1Panel.TabIndex = 0
         '
+        'showPassLbl
+        '
+        Me.showPassLbl.AutoSize = True
+        Me.showPassLbl.BackColor = System.Drawing.Color.Transparent
+        Me.showPassLbl.Font = New System.Drawing.Font("Poppins", 8.0!)
+        Me.showPassLbl.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(108, Byte), Integer))
+        Me.showPassLbl.Location = New System.Drawing.Point(367, 268)
+        Me.showPassLbl.Name = "showPassLbl"
+        Me.showPassLbl.Size = New System.Drawing.Size(93, 19)
+        Me.showPassLbl.TabIndex = 23
+        Me.showPassLbl.Text = "Show Password"
+        '
         'reenterPass
         '
         Me.reenterPass.AutoSize = True
         Me.reenterPass.Font = New System.Drawing.Font("Schibsted Grotesk Medium", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.reenterPass.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(71, Byte), Integer))
-        Me.reenterPass.Location = New System.Drawing.Point(276, 369)
+        Me.reenterPass.Location = New System.Drawing.Point(268, 287)
         Me.reenterPass.Name = "reenterPass"
         Me.reenterPass.Size = New System.Drawing.Size(156, 21)
         Me.reenterPass.TabIndex = 22
@@ -103,7 +115,7 @@ Partial Class studentRegistration
         '
         Me.reEnterPassTxtbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.reEnterPassTxtbox.Font = New System.Drawing.Font("Poppins Light", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.reEnterPassTxtbox.Location = New System.Drawing.Point(279, 393)
+        Me.reEnterPassTxtbox.Location = New System.Drawing.Point(271, 311)
         Me.reEnterPassTxtbox.Multiline = True
         Me.reEnterPassTxtbox.Name = "reEnterPassTxtbox"
         Me.reEnterPassTxtbox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
@@ -120,7 +132,7 @@ Partial Class studentRegistration
         Me.clearBtn.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(108, Byte), Integer))
         Me.clearBtn.Font = New System.Drawing.Font("Rubik SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.clearBtn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(7, Byte), Integer))
-        Me.clearBtn.Location = New System.Drawing.Point(35, 410)
+        Me.clearBtn.Location = New System.Drawing.Point(274, 405)
         Me.clearBtn.Name = "clearBtn"
         Me.clearBtn.Size = New System.Drawing.Size(185, 38)
         Me.clearBtn.TabIndex = 20
@@ -146,7 +158,7 @@ Partial Class studentRegistration
         Me.studentRegLogButton.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(108, Byte), Integer))
         Me.studentRegLogButton.Font = New System.Drawing.Font("Rubik SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.studentRegLogButton.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(7, Byte), Integer))
-        Me.studentRegLogButton.Location = New System.Drawing.Point(34, 363)
+        Me.studentRegLogButton.Location = New System.Drawing.Point(273, 358)
         Me.studentRegLogButton.Name = "studentRegLogButton"
         Me.studentRegLogButton.Size = New System.Drawing.Size(185, 38)
         Me.studentRegLogButton.TabIndex = 10
@@ -156,7 +168,7 @@ Partial Class studentRegistration
         '
         Me.studentRegMNameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.studentRegMNameTextBox.Font = New System.Drawing.Font("Poppins Light", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.studentRegMNameTextBox.Location = New System.Drawing.Point(34, 262)
+        Me.studentRegMNameTextBox.Location = New System.Drawing.Point(33, 238)
         Me.studentRegMNameTextBox.Multiline = True
         Me.studentRegMNameTextBox.Name = "studentRegMNameTextBox"
         Me.studentRegMNameTextBox.Size = New System.Drawing.Size(190, 28)
@@ -167,7 +179,7 @@ Partial Class studentRegistration
         Me.midNameLBl.AutoSize = True
         Me.midNameLBl.Font = New System.Drawing.Font("Schibsted Grotesk Medium", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.midNameLBl.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(71, Byte), Integer))
-        Me.midNameLBl.Location = New System.Drawing.Point(31, 239)
+        Me.midNameLBl.Location = New System.Drawing.Point(30, 215)
         Me.midNameLBl.Name = "midNameLBl"
         Me.midNameLBl.Size = New System.Drawing.Size(103, 21)
         Me.midNameLBl.TabIndex = 16
@@ -177,7 +189,7 @@ Partial Class studentRegistration
         '
         Me.studentRegFNameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.studentRegFNameTextBox.Font = New System.Drawing.Font("Poppins Light", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.studentRegFNameTextBox.Location = New System.Drawing.Point(34, 206)
+        Me.studentRegFNameTextBox.Location = New System.Drawing.Point(33, 182)
         Me.studentRegFNameTextBox.Multiline = True
         Me.studentRegFNameTextBox.Name = "studentRegFNameTextBox"
         Me.studentRegFNameTextBox.Size = New System.Drawing.Size(190, 28)
@@ -188,7 +200,7 @@ Partial Class studentRegistration
         Me.lastNameLbl.AutoSize = True
         Me.lastNameLbl.Font = New System.Drawing.Font("Schibsted Grotesk Medium", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lastNameLbl.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(71, Byte), Integer))
-        Me.lastNameLbl.Location = New System.Drawing.Point(31, 183)
+        Me.lastNameLbl.Location = New System.Drawing.Point(30, 159)
         Me.lastNameLbl.Name = "lastNameLbl"
         Me.lastNameLbl.Size = New System.Drawing.Size(90, 21)
         Me.lastNameLbl.TabIndex = 3
@@ -199,7 +211,7 @@ Partial Class studentRegistration
         Me.courseLbl.AutoSize = True
         Me.courseLbl.Font = New System.Drawing.Font("Schibsted Grotesk Medium", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.courseLbl.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(71, Byte), Integer))
-        Me.courseLbl.Location = New System.Drawing.Point(32, 294)
+        Me.courseLbl.Location = New System.Drawing.Point(31, 270)
         Me.courseLbl.Name = "courseLbl"
         Me.courseLbl.Size = New System.Drawing.Size(67, 21)
         Me.courseLbl.TabIndex = 14
@@ -209,7 +221,7 @@ Partial Class studentRegistration
         '
         Me.studentRegYearSecTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.studentRegYearSecTextBox.Font = New System.Drawing.Font("Poppins Light", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.studentRegYearSecTextBox.Location = New System.Drawing.Point(275, 151)
+        Me.studentRegYearSecTextBox.Location = New System.Drawing.Point(34, 353)
         Me.studentRegYearSecTextBox.Multiline = True
         Me.studentRegYearSecTextBox.Name = "studentRegYearSecTextBox"
         Me.studentRegYearSecTextBox.Size = New System.Drawing.Size(190, 28)
@@ -219,7 +231,7 @@ Partial Class studentRegistration
         '
         Me.studentRegCourseTxtBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.studentRegCourseTxtBox.Font = New System.Drawing.Font("Poppins Light", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.studentRegCourseTxtBox.Location = New System.Drawing.Point(35, 319)
+        Me.studentRegCourseTxtBox.Location = New System.Drawing.Point(34, 295)
         Me.studentRegCourseTxtBox.Multiline = True
         Me.studentRegCourseTxtBox.Name = "studentRegCourseTxtBox"
         Me.studentRegCourseTxtBox.Size = New System.Drawing.Size(190, 28)
@@ -230,7 +242,7 @@ Partial Class studentRegistration
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Schibsted Grotesk Medium", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(71, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(272, 128)
+        Me.Label4.Location = New System.Drawing.Point(31, 330)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(144, 21)
         Me.Label4.TabIndex = 5
@@ -240,7 +252,7 @@ Partial Class studentRegistration
         '
         Me.studentUserRegTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.studentUserRegTextBox.Font = New System.Drawing.Font("Poppins Light", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.studentUserRegTextBox.Location = New System.Drawing.Point(277, 262)
+        Me.studentUserRegTextBox.Location = New System.Drawing.Point(268, 180)
         Me.studentUserRegTextBox.Multiline = True
         Me.studentUserRegTextBox.Name = "studentUserRegTextBox"
         Me.studentUserRegTextBox.Size = New System.Drawing.Size(190, 28)
@@ -251,7 +263,7 @@ Partial Class studentRegistration
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Schibsted Grotesk Medium", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(71, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(275, 295)
+        Me.Label5.Location = New System.Drawing.Point(266, 213)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(89, 21)
         Me.Label5.TabIndex = 11
@@ -261,7 +273,7 @@ Partial Class studentRegistration
         '
         Me.studentPassRegTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.studentPassRegTextBox.Font = New System.Drawing.Font("Poppins Light", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.studentPassRegTextBox.Location = New System.Drawing.Point(278, 319)
+        Me.studentPassRegTextBox.Location = New System.Drawing.Point(269, 237)
         Me.studentPassRegTextBox.Multiline = True
         Me.studentPassRegTextBox.Name = "studentPassRegTextBox"
         Me.studentPassRegTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
@@ -273,7 +285,7 @@ Partial Class studentRegistration
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Schibsted Grotesk Medium", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(71, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(274, 239)
+        Me.Label6.Location = New System.Drawing.Point(265, 157)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(86, 21)
         Me.Label6.TabIndex = 10
@@ -284,7 +296,7 @@ Partial Class studentRegistration
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Schibsted Grotesk Medium", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(71, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(273, 183)
+        Me.Label3.Location = New System.Drawing.Point(264, 101)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(86, 21)
         Me.Label3.TabIndex = 8
@@ -294,7 +306,7 @@ Partial Class studentRegistration
         '
         Me.studentRegIdTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.studentRegIdTextBox.Font = New System.Drawing.Font("Poppins Light", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.studentRegIdTextBox.Location = New System.Drawing.Point(275, 208)
+        Me.studentRegIdTextBox.Location = New System.Drawing.Point(266, 126)
         Me.studentRegIdTextBox.Multiline = True
         Me.studentRegIdTextBox.Name = "studentRegIdTextBox"
         Me.studentRegIdTextBox.Size = New System.Drawing.Size(190, 28)
@@ -304,7 +316,7 @@ Partial Class studentRegistration
         '
         Me.studentRegLNameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.studentRegLNameTextBox.Font = New System.Drawing.Font("Poppins Light", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.studentRegLNameTextBox.Location = New System.Drawing.Point(34, 151)
+        Me.studentRegLNameTextBox.Location = New System.Drawing.Point(33, 127)
         Me.studentRegLNameTextBox.Multiline = True
         Me.studentRegLNameTextBox.Name = "studentRegLNameTextBox"
         Me.studentRegLNameTextBox.Size = New System.Drawing.Size(190, 28)
@@ -326,7 +338,7 @@ Partial Class studentRegistration
         Me.fnameLbl.AutoSize = True
         Me.fnameLbl.Font = New System.Drawing.Font("Schibsted Grotesk Medium", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.fnameLbl.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(71, Byte), Integer))
-        Me.fnameLbl.Location = New System.Drawing.Point(31, 128)
+        Me.fnameLbl.Location = New System.Drawing.Point(30, 104)
         Me.fnameLbl.Name = "fnameLbl"
         Me.fnameLbl.Size = New System.Drawing.Size(86, 21)
         Me.fnameLbl.TabIndex = 3
@@ -370,18 +382,6 @@ Partial Class studentRegistration
         Me.Guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.Guna2PictureBox2.TabIndex = 22
         Me.Guna2PictureBox2.TabStop = False
-        '
-        'showPassLbl
-        '
-        Me.showPassLbl.AutoSize = True
-        Me.showPassLbl.BackColor = System.Drawing.Color.Transparent
-        Me.showPassLbl.Font = New System.Drawing.Font("Poppins", 8.0!)
-        Me.showPassLbl.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(108, Byte), Integer))
-        Me.showPassLbl.Location = New System.Drawing.Point(375, 350)
-        Me.showPassLbl.Name = "showPassLbl"
-        Me.showPassLbl.Size = New System.Drawing.Size(93, 19)
-        Me.showPassLbl.TabIndex = 23
-        Me.showPassLbl.Text = "Show Password"
         '
         'studentRegistration
         '

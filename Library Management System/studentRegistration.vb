@@ -61,6 +61,7 @@ Public Class studentRegistration
     End Sub
 
     Private Sub studentRegistration_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        fixSize(Me)
         centerAll(Me)
         welcomePage.Hide()
         studentLogin.Hide()

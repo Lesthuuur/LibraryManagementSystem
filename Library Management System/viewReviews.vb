@@ -2,6 +2,7 @@
 
 Public Class viewReviews
     Private Sub viewReviews_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        fixSize(Me)
         reviewRichTxtbox.ReadOnly = True
         ratingsLblChanged.Hide()
         bookTitleChangeLbl.Text = Home.publicBookTitle

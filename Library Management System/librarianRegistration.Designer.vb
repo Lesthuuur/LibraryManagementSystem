@@ -36,6 +36,7 @@ Partial Class librarianRegistration
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.showPassLbl = New System.Windows.Forms.Label()
         Me.reEnterPassTxtbox = New System.Windows.Forms.TextBox()
         Me.reEnterPassLbl = New System.Windows.Forms.Label()
         Me.clearBtn = New Guna.UI2.WinForms.Guna2Button()
@@ -43,7 +44,6 @@ Partial Class librarianRegistration
         Me.adminRegButton = New Guna.UI2.WinForms.Guna2Button()
         Me.librarianMnameRegTxtBox = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.showPassLbl = New System.Windows.Forms.Label()
         Me.Guna2GroupBox1.SuspendLayout()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Guna2Panel1.SuspendLayout()
@@ -208,6 +208,18 @@ Partial Class librarianRegistration
         Me.Guna2Panel1.Size = New System.Drawing.Size(504, 382)
         Me.Guna2Panel1.TabIndex = 10
         '
+        'showPassLbl
+        '
+        Me.showPassLbl.AutoSize = True
+        Me.showPassLbl.BackColor = System.Drawing.Color.Transparent
+        Me.showPassLbl.Font = New System.Drawing.Font("Poppins", 8.0!)
+        Me.showPassLbl.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(108, Byte), Integer))
+        Me.showPassLbl.Location = New System.Drawing.Point(364, 232)
+        Me.showPassLbl.Name = "showPassLbl"
+        Me.showPassLbl.Size = New System.Drawing.Size(93, 19)
+        Me.showPassLbl.TabIndex = 16
+        Me.showPassLbl.Text = "Show Password"
+        '
         'reEnterPassTxtbox
         '
         Me.reEnterPassTxtbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
@@ -240,10 +252,10 @@ Partial Class librarianRegistration
         Me.clearBtn.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(108, Byte), Integer))
         Me.clearBtn.Font = New System.Drawing.Font("Rubik SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.clearBtn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(7, Byte), Integer))
-        Me.clearBtn.Location = New System.Drawing.Point(266, 317)
+        Me.clearBtn.Location = New System.Drawing.Point(43, 315)
         Me.clearBtn.Name = "clearBtn"
         Me.clearBtn.Size = New System.Drawing.Size(189, 38)
-        Me.clearBtn.TabIndex = 21
+        Me.clearBtn.TabIndex = 8
         Me.clearBtn.Text = "CLEAR"
         '
         'Label7
@@ -266,7 +278,7 @@ Partial Class librarianRegistration
         Me.adminRegButton.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(108, Byte), Integer))
         Me.adminRegButton.Font = New System.Drawing.Font("Rubik SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.adminRegButton.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(7, Byte), Integer))
-        Me.adminRegButton.Location = New System.Drawing.Point(45, 318)
+        Me.adminRegButton.Location = New System.Drawing.Point(262, 315)
         Me.adminRegButton.Name = "adminRegButton"
         Me.adminRegButton.Size = New System.Drawing.Size(189, 38)
         Me.adminRegButton.TabIndex = 7
@@ -292,18 +304,6 @@ Partial Class librarianRegistration
         Me.Label6.Size = New System.Drawing.Size(103, 21)
         Me.Label6.TabIndex = 11
         Me.Label6.Text = "MIDDLENAME"
-        '
-        'showPassLbl
-        '
-        Me.showPassLbl.AutoSize = True
-        Me.showPassLbl.BackColor = System.Drawing.Color.Transparent
-        Me.showPassLbl.Font = New System.Drawing.Font("Poppins", 8.0!)
-        Me.showPassLbl.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(108, Byte), Integer))
-        Me.showPassLbl.Location = New System.Drawing.Point(364, 232)
-        Me.showPassLbl.Name = "showPassLbl"
-        Me.showPassLbl.Size = New System.Drawing.Size(93, 19)
-        Me.showPassLbl.TabIndex = 16
-        Me.showPassLbl.Text = "Show Password"
         '
         'librarianRegistration
         '

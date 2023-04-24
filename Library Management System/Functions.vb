@@ -15,6 +15,10 @@ Module Functions
         form.Location = New Point((screenWidth - form.Width) / 2, (screenHeight - form.Height) / 2)
     End Sub
 
+    Sub fixSize(form As Form)
+        form.FormBorderStyle = FormBorderStyle.FixedSingle
+    End Sub
+
     'Encrypts the password in the database table
     Public hashString As String
     Sub passEncryption(password As String)
