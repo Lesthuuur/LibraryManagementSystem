@@ -42,7 +42,6 @@ Partial Class Home
         Me.authorTextChange = New System.Windows.Forms.Label()
         Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
-        Me.Guna2Panel4 = New Guna.UI2.WinForms.Guna2Panel()
         Me.readBtn = New Guna.UI2.WinForms.Guna2Button()
         Me.searchTxtbox = New Guna.UI2.WinForms.Guna2TextBox()
         Me.searchBtn = New Guna.UI2.WinForms.Guna2Button()
@@ -58,13 +57,16 @@ Partial Class Home
         Me.Label2 = New System.Windows.Forms.Label()
         Me.BindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.homeClearBtn = New Guna.UI2.WinForms.Guna2Button()
+        Me.Guna2Panel4 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
         Me.Guna2GroupBox1.SuspendLayout()
         CType(Me.accountsPicBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Guna2Panel2.SuspendLayout()
         CType(Me.dgv, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Guna2Panel3.SuspendLayout()
-        Me.Guna2Panel4.SuspendLayout()
         CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Guna2Panel4.SuspendLayout()
+        Me.FlowLayoutPanel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Guna2GroupBox1
@@ -123,9 +125,9 @@ Partial Class Home
         'Guna2Panel2
         '
         Me.Guna2Panel2.Controls.Add(Me.dgv)
-        Me.Guna2Panel2.Location = New System.Drawing.Point(7, 190)
+        Me.Guna2Panel2.Location = New System.Drawing.Point(7, 177)
         Me.Guna2Panel2.Name = "Guna2Panel2"
-        Me.Guna2Panel2.Size = New System.Drawing.Size(655, 445)
+        Me.Guna2Panel2.Size = New System.Drawing.Size(655, 458)
         Me.Guna2Panel2.TabIndex = 6
         '
         'dgv
@@ -248,14 +250,6 @@ Partial Class Home
         Me.RichTextBox1.TabIndex = 9
         Me.RichTextBox1.Text = ""
         '
-        'Guna2Panel4
-        '
-        Me.Guna2Panel4.Controls.Add(Me.bookTitleChange)
-        Me.Guna2Panel4.Location = New System.Drawing.Point(666, 173)
-        Me.Guna2Panel4.Name = "Guna2Panel4"
-        Me.Guna2Panel4.Size = New System.Drawing.Size(595, 65)
-        Me.Guna2Panel4.TabIndex = 8
-        '
         'readBtn
         '
         Me.readBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
@@ -368,11 +362,12 @@ Partial Class Home
         Me.programmingGradientBtn.FillColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.programmingGradientBtn.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.programmingGradientBtn.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(56, Byte), Integer))
-        Me.programmingGradientBtn.Font = New System.Drawing.Font("Schibsted Grotesk", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.programmingGradientBtn.Font = New System.Drawing.Font("Schibsted Grotesk", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.programmingGradientBtn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(56, Byte), Integer))
-        Me.programmingGradientBtn.Location = New System.Drawing.Point(372, 124)
+        Me.programmingGradientBtn.Location = New System.Drawing.Point(328, 3)
         Me.programmingGradientBtn.Name = "programmingGradientBtn"
-        Me.programmingGradientBtn.Size = New System.Drawing.Size(193, 54)
+        Me.programmingGradientBtn.PressedColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(71, Byte), Integer))
+        Me.programmingGradientBtn.Size = New System.Drawing.Size(144, 47)
         Me.programmingGradientBtn.TabIndex = 3
         Me.programmingGradientBtn.Text = "PROGRAMMING"
         '
@@ -387,11 +382,12 @@ Partial Class Home
         Me.selfhelpGradientBtn.FillColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.selfhelpGradientBtn.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.selfhelpGradientBtn.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(56, Byte), Integer))
-        Me.selfhelpGradientBtn.Font = New System.Drawing.Font("Schibsted Grotesk", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.selfhelpGradientBtn.Font = New System.Drawing.Font("Schibsted Grotesk", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.selfhelpGradientBtn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(56, Byte), Integer))
-        Me.selfhelpGradientBtn.Location = New System.Drawing.Point(-2, 118)
+        Me.selfhelpGradientBtn.Location = New System.Drawing.Point(3, 3)
         Me.selfhelpGradientBtn.Name = "selfhelpGradientBtn"
-        Me.selfhelpGradientBtn.Size = New System.Drawing.Size(133, 68)
+        Me.selfhelpGradientBtn.PressedColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(71, Byte), Integer))
+        Me.selfhelpGradientBtn.Size = New System.Drawing.Size(105, 47)
         Me.selfhelpGradientBtn.TabIndex = 0
         Me.selfhelpGradientBtn.Text = "SELF HELP"
         '
@@ -406,11 +402,12 @@ Partial Class Home
         Me.historyGradientBtn.FillColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.historyGradientBtn.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.historyGradientBtn.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(56, Byte), Integer))
-        Me.historyGradientBtn.Font = New System.Drawing.Font("Schibsted Grotesk", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.historyGradientBtn.Font = New System.Drawing.Font("Schibsted Grotesk", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.historyGradientBtn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(56, Byte), Integer))
-        Me.historyGradientBtn.Location = New System.Drawing.Point(116, 125)
+        Me.historyGradientBtn.Location = New System.Drawing.Point(114, 3)
         Me.historyGradientBtn.Name = "historyGradientBtn"
-        Me.historyGradientBtn.Size = New System.Drawing.Size(125, 54)
+        Me.historyGradientBtn.PressedColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(71, Byte), Integer))
+        Me.historyGradientBtn.Size = New System.Drawing.Size(96, 47)
         Me.historyGradientBtn.TabIndex = 1
         Me.historyGradientBtn.Text = "HISTORY"
         '
@@ -425,11 +422,12 @@ Partial Class Home
         Me.fictionGradBtn.FillColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.fictionGradBtn.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.fictionGradBtn.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(56, Byte), Integer))
-        Me.fictionGradBtn.Font = New System.Drawing.Font("Schibsted Grotesk", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.fictionGradBtn.Font = New System.Drawing.Font("Schibsted Grotesk", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.fictionGradBtn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(56, Byte), Integer))
-        Me.fictionGradBtn.Location = New System.Drawing.Point(556, 126)
+        Me.fictionGradBtn.Location = New System.Drawing.Point(478, 3)
         Me.fictionGradBtn.Name = "fictionGradBtn"
-        Me.fictionGradBtn.Size = New System.Drawing.Size(115, 53)
+        Me.fictionGradBtn.PressedColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(71, Byte), Integer))
+        Me.fictionGradBtn.Size = New System.Drawing.Size(100, 46)
         Me.fictionGradBtn.TabIndex = 4
         Me.fictionGradBtn.Text = "FICTION"
         '
@@ -444,11 +442,12 @@ Partial Class Home
         Me.romanceGradBtn.FillColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.romanceGradBtn.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.romanceGradBtn.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(56, Byte), Integer))
-        Me.romanceGradBtn.Font = New System.Drawing.Font("Schibsted Grotesk", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.romanceGradBtn.Font = New System.Drawing.Font("Schibsted Grotesk", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.romanceGradBtn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(56, Byte), Integer))
-        Me.romanceGradBtn.Location = New System.Drawing.Point(238, 124)
+        Me.romanceGradBtn.Location = New System.Drawing.Point(216, 3)
         Me.romanceGradBtn.Name = "romanceGradBtn"
-        Me.romanceGradBtn.Size = New System.Drawing.Size(133, 54)
+        Me.romanceGradBtn.PressedColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(71, Byte), Integer))
+        Me.romanceGradBtn.Size = New System.Drawing.Size(106, 47)
         Me.romanceGradBtn.TabIndex = 2
         Me.romanceGradBtn.Text = "ROMANCE"
         '
@@ -463,11 +462,12 @@ Partial Class Home
         Me.allBtn.FillColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.allBtn.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.allBtn.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(56, Byte), Integer))
-        Me.allBtn.Font = New System.Drawing.Font("Schibsted Grotesk", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.allBtn.Font = New System.Drawing.Font("Schibsted Grotesk", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.allBtn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(56, Byte), Integer))
-        Me.allBtn.Location = New System.Drawing.Point(655, 126)
+        Me.allBtn.Location = New System.Drawing.Point(584, 3)
         Me.allBtn.Name = "allBtn"
-        Me.allBtn.Size = New System.Drawing.Size(115, 53)
+        Me.allBtn.PressedColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(71, Byte), Integer))
+        Me.allBtn.Size = New System.Drawing.Size(66, 46)
         Me.allBtn.TabIndex = 5
         Me.allBtn.Text = "ALL"
         '
@@ -498,23 +498,39 @@ Partial Class Home
         Me.homeClearBtn.TabIndex = 59
         Me.homeClearBtn.Text = "CLEAR"
         '
+        'Guna2Panel4
+        '
+        Me.Guna2Panel4.Controls.Add(Me.bookTitleChange)
+        Me.Guna2Panel4.Location = New System.Drawing.Point(666, 176)
+        Me.Guna2Panel4.Name = "Guna2Panel4"
+        Me.Guna2Panel4.Size = New System.Drawing.Size(595, 62)
+        Me.Guna2Panel4.TabIndex = 8
+        '
+        'FlowLayoutPanel1
+        '
+        Me.FlowLayoutPanel1.Controls.Add(Me.selfhelpGradientBtn)
+        Me.FlowLayoutPanel1.Controls.Add(Me.historyGradientBtn)
+        Me.FlowLayoutPanel1.Controls.Add(Me.romanceGradBtn)
+        Me.FlowLayoutPanel1.Controls.Add(Me.programmingGradientBtn)
+        Me.FlowLayoutPanel1.Controls.Add(Me.fictionGradBtn)
+        Me.FlowLayoutPanel1.Controls.Add(Me.allBtn)
+        Me.FlowLayoutPanel1.Location = New System.Drawing.Point(6, 116)
+        Me.FlowLayoutPanel1.Name = "FlowLayoutPanel1"
+        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(656, 52)
+        Me.FlowLayoutPanel1.TabIndex = 60
+        '
         'Home
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1267, 650)
+        Me.Controls.Add(Me.FlowLayoutPanel1)
         Me.Controls.Add(Me.homeClearBtn)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.allBtn)
         Me.Controls.Add(Me.viewReviewsBtn)
-        Me.Controls.Add(Me.romanceGradBtn)
         Me.Controls.Add(Me.addReview)
-        Me.Controls.Add(Me.fictionGradBtn)
-        Me.Controls.Add(Me.historyGradientBtn)
         Me.Controls.Add(Me.searchTextBox)
-        Me.Controls.Add(Me.selfhelpGradientBtn)
         Me.Controls.Add(Me.searchBtn)
-        Me.Controls.Add(Me.programmingGradientBtn)
         Me.Controls.Add(Me.searchTxtbox)
         Me.Controls.Add(Me.readBtn)
         Me.Controls.Add(Me.RichTextBox1)
@@ -532,9 +548,10 @@ Partial Class Home
         CType(Me.dgv, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Guna2Panel3.ResumeLayout(False)
         Me.Guna2Panel3.PerformLayout()
+        CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Guna2Panel4.ResumeLayout(False)
         Me.Guna2Panel4.PerformLayout()
-        CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.FlowLayoutPanel1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -547,7 +564,6 @@ Partial Class Home
     Friend WithEvents Guna2Panel3 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents authorTextChange As Label
     Friend WithEvents RichTextBox1 As RichTextBox
-    Friend WithEvents Guna2Panel4 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents BindingSource1 As BindingSource
     Friend WithEvents dgv As Guna.UI2.WinForms.Guna2DataGridView
     Friend WithEvents readBtn As Guna.UI2.WinForms.Guna2Button
@@ -571,4 +587,6 @@ Partial Class Home
     Friend WithEvents allBtn As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents Label2 As Label
     Friend WithEvents homeClearBtn As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Guna2Panel4 As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents FlowLayoutPanel1 As FlowLayoutPanel
 End Class
