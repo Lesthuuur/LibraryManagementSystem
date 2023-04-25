@@ -13,6 +13,11 @@ Module Functions
         Dim screenWidth As Integer = Screen.PrimaryScreen.WorkingArea.Width
         Dim screenHeight As Integer = Screen.PrimaryScreen.WorkingArea.Height
         form.Location = New Point((screenWidth - form.Width) / 2, (screenHeight - form.Height) / 2)
+        form.FormBorderStyle = FormBorderStyle.FixedSingle
+        form.MaximizeBox = False
+        form.MinimizeBox = False
+
+
     End Sub
 
     Sub fixSize(form As Form)
