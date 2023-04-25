@@ -32,26 +32,28 @@ Public Class Home
         dr.Close()
         connection.Close()
     End Sub
-    Private Sub Guna2GradientButton1_Click(sender As Object, e As EventArgs) Handles selfhelpGradientBtn.Click
+    Private Sub selfhelpGradientBt_click(sender As Object, e As EventArgs) Handles selfhelpGradientBtn.Click
+        dgv.Rows.Clear()
         openConnnection()
         Try
-            sql = "SELECT * FROM books WHERE title = 'SELF HELP'"
+            sql = "SELECT title, author, description, path FROM books WHERE genre = 'SELF HELP'"
             cmd = New MySqlCommand(sql, connection)
             da = New MySqlDataAdapter(cmd)
+            dt = New DataTable
+            da.Fill(dt)
             dr = cmd.ExecuteReader()
 
-            While dr.Read()
-                bookTitleChange.Text() = dr.Item(1).ToString
-                authorTextChange.Text() = dr.Item(2).ToString
-                RichTextBox1.Text() = dr.Item(5).ToString
-            End While
+            For Each row As DataRow In dt.Rows
+                dgv.Rows.Add(row("title"), row("author"), row("description"), row("path"))
+                connection.Close()
+            Next
             dr.Close()
             connection.Close()
 
         Catch ex As Exception
             MessageBox.Show(ex.Message.ToString())
         End Try
-
+        dr.Close()
         connection.Close()
     End Sub
 

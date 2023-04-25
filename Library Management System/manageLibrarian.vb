@@ -1,4 +1,5 @@
-﻿Imports MySql.Data.MySqlClient
+﻿Imports System.Web.UI.HtmlControls
+Imports MySql.Data.MySqlClient
 Imports Mysqlx.XDevAPI.Common
 
 Public Class manageLibrarian
@@ -66,36 +67,45 @@ Public Class manageLibrarian
     Private Sub manageUsersUpdateButton_Click(sender As Object, e As EventArgs) Handles manageUsersUpdateButton.Click
         openConnnection()
         Dim confirmPass As String = (InputBox("Confirm Password"))
-        If librarianLogin.publicPassword = confirmPass Then
-            Try
-                sql = "UPDATE librarian SET librarian_lastName = @lastname, librarian_firstName = @firstname, librarian_MidName = @middlename,  username = @username,
+        If confirmPass <> "" Then ' Check if the user entered a password confirmation
+            If librarianLogin.publicPassword = confirmPass Then
+                Dim confirmResult As DialogResult = MessageBox.Show("Are you sure you want to update this student?", "Confirmation", MessageBoxButtons.YesNoCancel)
+
+                If confirmResult = DialogResult.Yes Then
+                    Try
+                        sql = "UPDATE librarian SET librarian_lastName = @lastname, librarian_firstName = @firstname, librarian_MidName = @middlename,  username = @username,
             password = SHA2(@password, 256) WHERE id = @userID"
 
-                cmd = New MySqlCommand(sql, connection)
-                cmd.Parameters.AddWithValue("@userID", librarianId)
-                cmd.Parameters.AddWithValue("@lastname", librarianLname.Text)
-                cmd.Parameters.AddWithValue("@firstname", librarianFname.Text)
-                cmd.Parameters.AddWithValue("@middlename", librarianMname.Text)
-                cmd.Parameters.AddWithValue("@username", librarianUsername.Text)
-                cmd.Parameters.AddWithValue("@password", librarianPassword.Text)
+                        cmd = New MySqlCommand(sql, connection)
+                        cmd.Parameters.AddWithValue("@userID", librarianId)
+                        cmd.Parameters.AddWithValue("@lastname", librarianLname.Text)
+                        cmd.Parameters.AddWithValue("@firstname", librarianFname.Text)
+                        cmd.Parameters.AddWithValue("@middlename", librarianMname.Text)
+                        cmd.Parameters.AddWithValue("@username", librarianUsername.Text)
+                        cmd.Parameters.AddWithValue("@password", librarianPassword.Text)
 
-                cmd.ExecuteNonQuery()
+                        cmd.ExecuteNonQuery()
 
-                MessageBox.Show("Librarian updated Succesfully")
-                clearTextbox(Me)
-                updateDgv()
-                connection.Close()
-            Catch ex As Exception
-                MessageBox.Show(ex.Message.ToString)
-            End Try
+                        MessageBox.Show("Librarian updated Succesfully")
+                        clearTextbox(Me)
+                        updateDgv()
+                        connection.Close()
+                    Catch ex As Exception
+                        MessageBox.Show(ex.Message.ToString)
+                    End Try
 
-            connection.Close()
+                    connection.Close()
+
+                ElseIf confirmResult = DialogResult.No Then
+                    'do nothing because the user clicks no
+                ElseIf confirmResult = DialogResult.Cancel Then
+                    MessageBox.Show("Update canceled by user")
+                End If
+            End If
         Else
-            MessageBox.Show("Password does not match")
-
+            ' Cancel the update if the user clicks "Cancel" on the input box
+            MessageBox.Show("Password does not match!")
         End If
-
-
     End Sub
 
     Public librarianId As Integer

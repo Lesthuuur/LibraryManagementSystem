@@ -65,6 +65,7 @@ Public Class manageStudents
     Private Sub manageStudentsDgv_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles manageStudentsDgv.CellDoubleClick
         Dim rowIndex As Integer = manageStudentsDgv.SelectedRows(0).Index
 
+        studentIDTxtbox.Enabled = False
         ' Get the values of the title and author columns for the selected row
         Dim studentLastname As String = manageStudentsDgv.Rows(rowIndex).Cells("lastname").Value.ToString()
         Dim studentFirstname As String = manageStudentsDgv.Rows(rowIndex).Cells("firstname").Value.ToString()
@@ -101,45 +102,57 @@ Public Class manageStudents
 
     Private Sub manageStudentsClearButton_Click(sender As Object, e As EventArgs) Handles manageStudentsClearButton.Click
         clearTextbox(Me)
+        studentIDTxtbox.Enabled = True
     End Sub
 
     Private Sub manageStudentsUpdateButton_Click(sender As Object, e As EventArgs) Handles manageStudentsUpdateButton.Click
         openConnnection()
 
         Dim confirmPass As String = (InputBox("Confirm Password"))
-        If librarianLogin.publicPassword = confirmPass Then
-            Try
-                sql = "UPDATE students SET student_lastName = @lastname, student_firstName = @firstname, 
-                    student_midName = @middlename,  course = @course, year_section = @yearSec, username = @username,
-                    password = SHA2(@password, 256) WHERE student_id = @studentID"
 
-                cmd = New MySqlCommand(sql, connection)
+        If confirmPass <> "" Then ' Check if the user entered a password confirmation
+            If librarianLogin.publicPassword = confirmPass Then
+                ' Confirmation dialog
+                Dim confirmResult As DialogResult = MessageBox.Show("Are you sure you want to update this student?", "Confirmation", MessageBoxButtons.YesNoCancel)
+                If confirmResult = DialogResult.Yes Then
+                    Try
+                        ' Update query
+                        sql = "UPDATE students SET student_lastName = @lastname, student_firstName = @firstname, student_midName = @middlename,  course = @course, year_section = @yearSec, username = @username, password = SHA2(@password, 256) WHERE student_id = @studentID"
 
+                        cmd = New MySqlCommand(sql, connection)
 
-                cmd.Parameters.AddWithValue("@lastname", lastnameTxtbox.Text)
-                cmd.Parameters.AddWithValue("@firstname", firstnameTxtbox.Text)
-                cmd.Parameters.AddWithValue("@middlename", midnameTxtbox.Text)
-                cmd.Parameters.AddWithValue("@course", courseTxtbox.Text)
-                cmd.Parameters.AddWithValue("@yearSec", yearSecTxtbox.Text)
-                cmd.Parameters.AddWithValue("@studentID", studentIDTxtbox.Text)
-                cmd.Parameters.AddWithValue("@username", usernameTxtbox.Text)
-                cmd.Parameters.AddWithValue("@password", passwordTxtbox.Text)
+                        cmd.Parameters.AddWithValue("@lastname", lastnameTxtbox.Text)
+                        cmd.Parameters.AddWithValue("@firstname", firstnameTxtbox.Text)
+                        cmd.Parameters.AddWithValue("@middlename", midnameTxtbox.Text)
+                        cmd.Parameters.AddWithValue("@course", courseTxtbox.Text)
+                        cmd.Parameters.AddWithValue("@yearSec", yearSecTxtbox.Text)
+                        cmd.Parameters.AddWithValue("@studentID", studentIDTxtbox.Text)
+                        cmd.Parameters.AddWithValue("@username", usernameTxtbox.Text)
+                        cmd.Parameters.AddWithValue("@password", passwordTxtbox.Text)
 
-                cmd.ExecuteNonQuery()
+                        cmd.ExecuteNonQuery()
 
-                MessageBox.Show("Student updated succesfully!")
-                clearTextbox(Me)
-                updateDgv()
+                        MessageBox.Show("Student updated succesfully!")
+                        clearTextbox(Me)
+                        updateDgv()
+                        studentIDTxtbox.Enabled = True
+                        connection.Close()
+                    Catch ex As Exception
+                        MessageBox.Show(ex.Message.ToString)
+                    End Try
+                ElseIf confirmResult = DialogResult.No Then
+                    ' Do nothing if the user clicks "No"
+                ElseIf confirmResult = DialogResult.Cancel Then
+                    ' Cancel the update if the user clicks "Cancel"
+                    MessageBox.Show("Update canceled by user")
+                End If ' End of confirmation If statement
                 connection.Close()
-            Catch ex As Exception
-                MessageBox.Show(ex.Message.ToString)
-            End Try
-            connection.Close()
-
-
-
+            Else
+                MessageBox.Show("Password does not match")
+            End If
         Else
-            MessageBox.Show("Password does not match")
+            ' Cancel the update if the user clicks "Cancel" on the input box
+            MessageBox.Show("Update canceled by user")
         End If
 
     End Sub

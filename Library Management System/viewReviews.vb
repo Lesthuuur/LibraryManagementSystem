@@ -54,7 +54,7 @@ Public Class viewReviews
         reviewRichTxtbox.Text = review
         dateTimeLblChange.Text = dateTime
         ratingsLblChanged.Show()
-
+        dateTimeLblChange.Show()
 
     End Sub
 

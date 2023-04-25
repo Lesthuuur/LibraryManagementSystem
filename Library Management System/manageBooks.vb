@@ -111,7 +111,7 @@ Public Class manageBooks
 
     Private Sub manageBooksDgv_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles manageBooksDgv.CellDoubleClick
         Dim rowIndex As Integer = manageBooksDgv.SelectedRows(0).Index
-
+        titleTxtbox.Enabled = False
         ' Get the values of the title and author columns for the selected row
         Dim title As String = manageBooksDgv.Rows(rowIndex).Cells("title").Value.ToString()
         Dim author As String = manageBooksDgv.Rows(rowIndex).Cells("author").Value.ToString()
@@ -151,8 +151,10 @@ Public Class manageBooks
                 MessageBox.Show("Book updated successfully!")
                 clearTextbox(Me)
                 updateDgv()
+                titleTxtbox.Enabled = True
                 descriptionRichTxtbox.Clear()
                 clearTextbox(Me)
+
                 connection.Close()
 
             Catch ex As Exception
@@ -163,6 +165,7 @@ Public Class manageBooks
 
     Private Sub clearBtn_Click(sender As Object, e As EventArgs) Handles clearBtn.Click
         clearTextbox(Me)
+        titleTxtbox.Enabled = True
     End Sub
 
     Private Sub manageBooksSearchButton_Click(sender As Object, e As EventArgs) Handles manageBooksSearchButton.Click
@@ -184,7 +187,6 @@ Public Class manageBooks
             Next
 
         Catch ex As Exception
-
             MessageBox.Show("Error: " & ex.Message)
         End Try
         connection.Close()

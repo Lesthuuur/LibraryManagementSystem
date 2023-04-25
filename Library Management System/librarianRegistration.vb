@@ -41,7 +41,6 @@ Public Class librarianRegistration
 
         ElseIf librarianPassRegTextBox.Text <> reEnterPassTxtbox.Text() Then
             MessageBox.Show("Password does not match!")
-
         Else
 
             Try
