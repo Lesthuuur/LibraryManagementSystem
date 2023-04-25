@@ -16,8 +16,6 @@ Public Class viewReviews
         Dim dataTable As New DataTable
         conn.Open()
 
-
-
         Try
             query = "SELECT r.student_id, b.title, r.review, r.ratings, r.time_date 
              FROM reviews r 
