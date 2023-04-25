@@ -64,6 +64,15 @@ Module Functions
         Next
     End Sub
 
+    'Sub mouseHandBtn(control As Control)
+    '    For Each childControl As Control In control.Controls
+    '        If TypeOf childControl Is Button Then
+    '            childControl.Cursor = Cursors.Hand
+
+    '        End If
+    '    Next
+    'End Sub
+
     Public Class studentLogin
         Public Shared Property currentUserType As String = ""
     End Class

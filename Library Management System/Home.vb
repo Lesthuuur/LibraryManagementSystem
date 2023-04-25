@@ -60,6 +60,7 @@ Public Class Home
     Public publicBookTitle As String
     Private Sub Home_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         fixSize(Me)
+
         RichTextBox1.ReadOnly = True
         addReview.Enabled = False
         viewReviewsBtn.Enabled = False

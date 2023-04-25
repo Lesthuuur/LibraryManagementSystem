@@ -37,6 +37,7 @@ Partial Class accounts
         Me.manageStudent.BackColor = System.Drawing.Color.Transparent
         Me.manageStudent.BorderColor = System.Drawing.Color.Transparent
         Me.manageStudent.BorderRadius = 20
+        Me.manageStudent.Cursor = System.Windows.Forms.Cursors.Hand
         Me.manageStudent.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.manageStudent.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.manageStudent.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
@@ -55,6 +56,7 @@ Partial Class accounts
         Me.manageLibrarianBtn.BackColor = System.Drawing.Color.Transparent
         Me.manageLibrarianBtn.BorderColor = System.Drawing.Color.Transparent
         Me.manageLibrarianBtn.BorderRadius = 20
+        Me.manageLibrarianBtn.Cursor = System.Windows.Forms.Cursors.Hand
         Me.manageLibrarianBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.manageLibrarianBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.manageLibrarianBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
@@ -84,6 +86,7 @@ Partial Class accounts
         Me.manageBooksBtn.BackColor = System.Drawing.Color.Transparent
         Me.manageBooksBtn.BorderColor = System.Drawing.Color.Transparent
         Me.manageBooksBtn.BorderRadius = 20
+        Me.manageBooksBtn.Cursor = System.Windows.Forms.Cursors.Hand
         Me.manageBooksBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.manageBooksBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.manageBooksBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))

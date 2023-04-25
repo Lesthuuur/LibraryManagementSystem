@@ -24,9 +24,9 @@ Partial Class Home
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Home))
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Guna2GroupBox1 = New Guna.UI2.WinForms.Guna2GroupBox()
         Me.logoutBtn = New Guna.UI2.WinForms.Guna2Button()
         Me.accountsPicBox = New System.Windows.Forms.PictureBox()
@@ -88,6 +88,7 @@ Partial Class Home
         '
         'logoutBtn
         '
+        Me.logoutBtn.Cursor = System.Windows.Forms.Cursors.Hand
         Me.logoutBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.logoutBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.logoutBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
@@ -103,6 +104,7 @@ Partial Class Home
         '
         'accountsPicBox
         '
+        Me.accountsPicBox.Cursor = System.Windows.Forms.Cursors.Hand
         Me.accountsPicBox.Image = CType(resources.GetObject("accountsPicBox.Image"), System.Drawing.Image)
         Me.accountsPicBox.Location = New System.Drawing.Point(1174, 23)
         Me.accountsPicBox.Name = "accountsPicBox"
@@ -132,27 +134,27 @@ Partial Class Home
         '
         'dgv
         '
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
-        Me.dgv.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Schibsted Grotesk SemiBold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgv.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.White
+        Me.dgv.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Schibsted Grotesk SemiBold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgv.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
         Me.dgv.ColumnHeadersHeight = 30
         Me.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
         Me.dgv.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.bookTitle, Me.bookAuthor, Me.bookDescription, Me.bookPath})
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Poppins", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgv.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Poppins", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgv.DefaultCellStyle = DataGridViewCellStyle6
         Me.dgv.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.dgv.Location = New System.Drawing.Point(6, 9)
         Me.dgv.Name = "dgv"
@@ -252,6 +254,7 @@ Partial Class Home
         '
         'readBtn
         '
+        Me.readBtn.Cursor = System.Windows.Forms.Cursors.Hand
         Me.readBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.readBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.readBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
@@ -287,6 +290,7 @@ Partial Class Home
         '
         'searchBtn
         '
+        Me.searchBtn.Cursor = System.Windows.Forms.Cursors.Hand
         Me.searchBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.searchBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.searchBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
@@ -323,6 +327,7 @@ Partial Class Home
         '
         'addReview
         '
+        Me.addReview.Cursor = System.Windows.Forms.Cursors.Hand
         Me.addReview.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.addReview.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.addReview.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
@@ -338,6 +343,7 @@ Partial Class Home
         '
         'viewReviewsBtn
         '
+        Me.viewReviewsBtn.Cursor = System.Windows.Forms.Cursors.Hand
         Me.viewReviewsBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.viewReviewsBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.viewReviewsBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
@@ -354,6 +360,7 @@ Partial Class Home
         'programmingGradientBtn
         '
         Me.programmingGradientBtn.BackColor = System.Drawing.Color.Transparent
+        Me.programmingGradientBtn.Cursor = System.Windows.Forms.Cursors.Hand
         Me.programmingGradientBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.programmingGradientBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.programmingGradientBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
@@ -374,6 +381,7 @@ Partial Class Home
         'selfhelpGradientBtn
         '
         Me.selfhelpGradientBtn.BackColor = System.Drawing.Color.Transparent
+        Me.selfhelpGradientBtn.Cursor = System.Windows.Forms.Cursors.Hand
         Me.selfhelpGradientBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.selfhelpGradientBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.selfhelpGradientBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
@@ -394,6 +402,7 @@ Partial Class Home
         'historyGradientBtn
         '
         Me.historyGradientBtn.BackColor = System.Drawing.Color.Transparent
+        Me.historyGradientBtn.Cursor = System.Windows.Forms.Cursors.Hand
         Me.historyGradientBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.historyGradientBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.historyGradientBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
@@ -414,6 +423,7 @@ Partial Class Home
         'fictionGradBtn
         '
         Me.fictionGradBtn.BackColor = System.Drawing.Color.Transparent
+        Me.fictionGradBtn.Cursor = System.Windows.Forms.Cursors.Hand
         Me.fictionGradBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.fictionGradBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.fictionGradBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
@@ -434,6 +444,7 @@ Partial Class Home
         'romanceGradBtn
         '
         Me.romanceGradBtn.BackColor = System.Drawing.Color.Transparent
+        Me.romanceGradBtn.Cursor = System.Windows.Forms.Cursors.Hand
         Me.romanceGradBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.romanceGradBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.romanceGradBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
@@ -454,6 +465,7 @@ Partial Class Home
         'allBtn
         '
         Me.allBtn.BackColor = System.Drawing.Color.Transparent
+        Me.allBtn.Cursor = System.Windows.Forms.Cursors.Hand
         Me.allBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.allBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.allBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
@@ -485,6 +497,7 @@ Partial Class Home
         '
         'homeClearBtn
         '
+        Me.homeClearBtn.Cursor = System.Windows.Forms.Cursors.Hand
         Me.homeClearBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.homeClearBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.homeClearBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
