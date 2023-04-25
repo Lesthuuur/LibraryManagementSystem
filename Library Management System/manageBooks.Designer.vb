@@ -56,6 +56,7 @@ Partial Class manageBooks
         'manageBooksSearchButton
         '
         Me.manageBooksSearchButton.BorderRadius = 20
+        Me.manageBooksSearchButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.manageBooksSearchButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.manageBooksSearchButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.manageBooksSearchButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
@@ -72,6 +73,7 @@ Partial Class manageBooks
         'manageBooksDeleteButton
         '
         Me.manageBooksDeleteButton.BorderRadius = 20
+        Me.manageBooksDeleteButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.manageBooksDeleteButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.manageBooksDeleteButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.manageBooksDeleteButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
@@ -88,6 +90,7 @@ Partial Class manageBooks
         'manageBooksAddButton
         '
         Me.manageBooksAddButton.BorderRadius = 20
+        Me.manageBooksAddButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.manageBooksAddButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.manageBooksAddButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.manageBooksAddButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
@@ -104,6 +107,7 @@ Partial Class manageBooks
         'manageBooksUpdateButton
         '
         Me.manageBooksUpdateButton.BorderRadius = 20
+        Me.manageBooksUpdateButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.manageBooksUpdateButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.manageBooksUpdateButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.manageBooksUpdateButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
@@ -364,6 +368,7 @@ Partial Class manageBooks
         'clearBtn
         '
         Me.clearBtn.BorderRadius = 20
+        Me.clearBtn.Cursor = System.Windows.Forms.Cursors.Hand
         Me.clearBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.clearBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.clearBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
@@ -391,6 +396,7 @@ Partial Class manageBooks
         'showAll
         '
         Me.showAll.BorderRadius = 20
+        Me.showAll.Cursor = System.Windows.Forms.Cursors.Hand
         Me.showAll.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.showAll.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.showAll.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
@@ -407,6 +413,7 @@ Partial Class manageBooks
         'openFileDialog
         '
         Me.openFileDialog.BorderRadius = 20
+        Me.openFileDialog.Cursor = System.Windows.Forms.Cursors.Hand
         Me.openFileDialog.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.openFileDialog.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.openFileDialog.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))

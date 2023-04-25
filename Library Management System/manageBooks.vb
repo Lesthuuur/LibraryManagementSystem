@@ -30,6 +30,7 @@ Public Class manageBooks
     End Sub
 
     Private Sub ManageBooks_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        manageBooksDgv.ReadOnly = True
         fixSize(Me)
         centerAll(Me)
         titleTxtbox.Select()

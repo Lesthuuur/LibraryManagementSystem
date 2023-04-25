@@ -30,6 +30,7 @@ Public Class manageLibrarian
     End Sub
 
     Private Sub manageUsers_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        manageLibrarianDgv.ReadOnly = True
         librarianLname.Select()
         fixSize(Me)
         centerAll(Me)

@@ -59,6 +59,7 @@ Public Class Home
 
     Public publicBookTitle As String
     Private Sub Home_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        dgv.ReadOnly = True
         fixSize(Me)
 
         RichTextBox1.ReadOnly = True

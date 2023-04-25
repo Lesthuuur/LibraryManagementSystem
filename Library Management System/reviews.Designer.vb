@@ -31,9 +31,9 @@ Partial Class reviews
         Me.ratingTxtbox = New Guna.UI2.WinForms.Guna2TextBox()
         Me.rating = New System.Windows.Forms.Label()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.bookTitleChangeLbl = New System.Windows.Forms.Label()
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.studentIDChangeLbl = New System.Windows.Forms.Label()
-        Me.bookTitleChangeLbl = New System.Windows.Forms.Label()
         Me.addReviewsLbl = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Guna2Panel1.SuspendLayout()
@@ -86,6 +86,7 @@ Partial Class reviews
         'clearBtn
         '
         Me.clearBtn.BorderRadius = 20
+        Me.clearBtn.Cursor = System.Windows.Forms.Cursors.Hand
         Me.clearBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.clearBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.clearBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
@@ -102,6 +103,7 @@ Partial Class reviews
         'reviewsAddBtn
         '
         Me.reviewsAddBtn.BorderRadius = 20
+        Me.reviewsAddBtn.Cursor = System.Windows.Forms.Cursors.Hand
         Me.reviewsAddBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.reviewsAddBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.reviewsAddBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
@@ -155,6 +157,17 @@ Partial Class reviews
         Me.Guna2Panel1.Size = New System.Drawing.Size(389, 40)
         Me.Guna2Panel1.TabIndex = 72
         '
+        'bookTitleChangeLbl
+        '
+        Me.bookTitleChangeLbl.AutoSize = True
+        Me.bookTitleChangeLbl.Font = New System.Drawing.Font("Poppins SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.bookTitleChangeLbl.ForeColor = System.Drawing.Color.Black
+        Me.bookTitleChangeLbl.Location = New System.Drawing.Point(2, 7)
+        Me.bookTitleChangeLbl.Name = "bookTitleChangeLbl"
+        Me.bookTitleChangeLbl.Size = New System.Drawing.Size(101, 28)
+        Me.bookTitleChangeLbl.TabIndex = 75
+        Me.bookTitleChangeLbl.Text = "BOOK TITLE"
+        '
         'Guna2Panel2
         '
         Me.Guna2Panel2.Controls.Add(Me.studentIDChangeLbl)
@@ -173,17 +186,6 @@ Partial Class reviews
         Me.studentIDChangeLbl.Size = New System.Drawing.Size(102, 28)
         Me.studentIDChangeLbl.TabIndex = 74
         Me.studentIDChangeLbl.Text = "STUDENT ID"
-        '
-        'bookTitleChangeLbl
-        '
-        Me.bookTitleChangeLbl.AutoSize = True
-        Me.bookTitleChangeLbl.Font = New System.Drawing.Font("Poppins SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.bookTitleChangeLbl.ForeColor = System.Drawing.Color.Black
-        Me.bookTitleChangeLbl.Location = New System.Drawing.Point(2, 7)
-        Me.bookTitleChangeLbl.Name = "bookTitleChangeLbl"
-        Me.bookTitleChangeLbl.Size = New System.Drawing.Size(101, 28)
-        Me.bookTitleChangeLbl.TabIndex = 75
-        Me.bookTitleChangeLbl.Text = "BOOK TITLE"
         '
         'addReviewsLbl
         '
