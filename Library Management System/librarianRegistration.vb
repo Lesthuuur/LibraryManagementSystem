@@ -61,8 +61,10 @@ Public Class librarianRegistration
 
                 MessageBox.Show("Registration Complete!")
                 MessageBox.Show("Proceed to login!")
+                Me.Close()
                 librarianLogin.Show()
                 clearTextbox(Me)
+                Me.Hide()
             Catch ex As Exception
                 MessageBox.Show(ex.Message.ToString())
             End Try

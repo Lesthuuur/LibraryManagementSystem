@@ -20,6 +20,10 @@ Module Functions
 
     End Sub
 
+
+    Public publicLibrarianPass As String
+
+
     Sub fixSize(form As Form)
         form.FormBorderStyle = FormBorderStyle.FixedSingle
     End Sub
