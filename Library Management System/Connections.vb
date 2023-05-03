@@ -32,7 +32,7 @@ Module Module1
         If connection.State = ConnectionState.Open Then
             connection.Close()
         End If
-        connection.ConnectionString = "Server=127.0.0.1;Port=3307;Database=librarymanagementsystem;Uid=root;Pwd=;"
+        connection.ConnectionString = "Server=127.0.0.1;Port=3307;Database=librarymanagementsystem;Uid=lesthuuur;Pwd=admin123;"
         connection.Open()
     End Sub
 

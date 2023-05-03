@@ -111,6 +111,7 @@ Partial Class welcomePage
         '
         'Guna2GroupBox1
         '
+        Me.Guna2GroupBox1.BackColor = System.Drawing.Color.Transparent
         Me.Guna2GroupBox1.BorderThickness = 0
         Me.Guna2GroupBox1.Controls.Add(Me.Guna2PictureBox1)
         Me.Guna2GroupBox1.Controls.Add(Me.welcomeLabel)
@@ -118,6 +119,7 @@ Partial Class welcomePage
         Me.Guna2GroupBox1.Controls.Add(Me.librarianBtn)
         Me.Guna2GroupBox1.CustomBorderColor = System.Drawing.Color.Transparent
         Me.Guna2GroupBox1.CustomBorderThickness = New System.Windows.Forms.Padding(0)
+        Me.Guna2GroupBox1.FillColor = System.Drawing.SystemColors.Window
         Me.Guna2GroupBox1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Guna2GroupBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
         Me.Guna2GroupBox1.Location = New System.Drawing.Point(733, 99)
