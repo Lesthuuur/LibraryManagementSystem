@@ -151,14 +151,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Library Management System.exe" size="6052784">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Library Management System.exe" size="6054320">
       <assemblyIdentity name="Library Management System" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>m+tqojrwDJDRNWT6LmK3HyG9Fhf0Sm/0hsSA7o7fvbY=</dsig:DigestValue>
+        <dsig:DigestValue>AfvKv3oEbUYsTLC2/Y/4/ji9Pj8ME4AdjfHgTLGd8JE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

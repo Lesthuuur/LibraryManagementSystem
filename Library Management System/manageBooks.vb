@@ -191,6 +191,7 @@ Public Class manageBooks
             MessageBox.Show("Error: " & ex.Message)
         End Try
         connection.Close()
+         clearTextbox(Me)
     End Sub
 
     Private Sub showAll_Click(sender As Object, e As EventArgs) Handles showAll.Click
@@ -212,4 +213,28 @@ Public Class manageBooks
             pathTxtbox.Text = openFileDialog1.FileName
         End If
     End Sub
+
+    Private Sub searchTxtbox_TextChanged(sender As Object, e As EventArgs) Handles searchTxtbox.TextChanged
+        ' Get the search keyword entered by the user
+        Dim keyword As String = searchTxtbox.Text.Trim
+
+        ' Clear the previous search results from the DataGridView
+        manageBooksDgv.Rows.Clear()
+
+        ' Perform the search query and display the results in the DataGridView
+        openConnnection()
+        Dim sql As String = "SELECT title, author, genre, description, path FROM books WHERE title LIKE @keyword OR author LIKE @keyword OR genre LIKE @keyword"
+        Dim cmd As New MySqlCommand(sql, connection)
+        cmd.Parameters.AddWithValue("@keyword", "%" & keyword & "%")
+
+        Dim reader As MySqlDataReader = cmd.ExecuteReader()
+
+        While reader.Read()
+            manageBooksDgv.Rows.Add(reader("title"), reader("author"), reader("genre"), reader("description"), reader("path"))
+        End While
+
+        reader.Close()
+        connection.Close()
+    End Sub
+
 End Class

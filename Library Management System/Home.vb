@@ -59,6 +59,12 @@ Public Class Home
 
     Public publicBookTitle As String
     Private Sub Home_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+
+        If authorTextChange.Text = "" Or bookTitleChange.Text = "" Then
+            path = Nothing
+        End If
+
         dgv.ReadOnly = True
         fixSize(Me)
 
@@ -108,14 +114,20 @@ Public Class Home
     End Sub
 
     Private Sub readBtn_Click_1(sender As Object, e As EventArgs) Handles readBtn.Click
-        Dim filePath As String = Me.path
-        Dim processInfo As New ProcessStartInfo()
-        processInfo.FileName = filePath
-        processInfo.Verb = "Open"
-        processInfo.WindowStyle = ProcessWindowStyle.Normal
-        Dim process As New Process()
-        process.StartInfo = processInfo
-        process.Start()
+
+        If path Is Nothing Then
+            MessageBox.Show("No Book selected!")
+        Else
+            Dim filePath As String = Me.path
+            Dim processInfo As New ProcessStartInfo()
+            processInfo.FileName = filePath
+            processInfo.Verb = "Open"
+            processInfo.WindowStyle = ProcessWindowStyle.Normal
+            Dim process As New Process()
+            process.StartInfo = processInfo
+            process.Start()
+            path = Nothing
+        End If
     End Sub
 
     Private Sub romanceGradBtn_Click(sender As Object, e As EventArgs) Handles romanceGradBtn.Click
@@ -287,7 +299,7 @@ Public Class Home
             MessageBox.Show("Error: " & ex.Message)
         End Try
         connection.Close()
-
+        searchTextBox.Clear()
     End Sub
 
     Private Sub allBtn_Click(sender As Object, e As EventArgs) Handles allBtn.Click
@@ -341,10 +353,35 @@ Public Class Home
         connection.Close()
     End Sub
     Private Sub homeClearBtn_Click(sender As Object, e As EventArgs) Handles homeClearBtn.Click
+        path = Nothing
         clearTextbox(Me)
         bookTitleChange.Hide()
         authorTextChange.Hide()
         addReview.Enabled = False
         viewReviewsBtn.Enabled = False
     End Sub
+
+    Private Sub searchTextBox_TextChanged(sender As Object, e As EventArgs) Handles searchTextBox.TextChanged
+        ' Get the search keyword entered by the user
+        Dim keyword As String = searchTextBox.Text.Trim
+
+        ' Clear the previous search results from the DataGridView
+        dgv.Rows.Clear()
+
+        ' Perform the search query and display the results in the DataGridView
+        openConnnection()
+        Dim sql As String = "SELECT title, author, description, path FROM books WHERE title LIKE @keyword OR author LIKE @keyword"
+        Dim cmd As New MySqlCommand(sql, connection)
+        cmd.Parameters.AddWithValue("@keyword", "%" & keyword & "%")
+
+        Dim reader As MySqlDataReader = cmd.ExecuteReader()
+
+        While reader.Read()
+            dgv.Rows.Add(reader("title"), reader("author"), reader("description"), reader("path"))
+        End While
+
+        reader.Close()
+        connection.Close()
+    End Sub
+
 End Class
