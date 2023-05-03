@@ -9,7 +9,7 @@ Public Class viewReviews
         ratingsLblChanged.Hide()
         dateTimeLblChange.Hide()
         bookTitleChangeLbl.Text = Home.publicBookTitle
-        Dim conn As New MySqlConnection("Server=127.0.0.1;Port=3307;Database=librarymanagementsystem;Uid=root;Pwd=;")
+        Dim conn As New MySqlConnection("Server=127.0.0.1;Port=3307;Database=librarymanagementsystem;Uid=lesthuuur;Pwd=admin123;")
         Dim query As String
         Dim command As New MySqlCommand
         Dim dataAdapter As New MySqlDataAdapter

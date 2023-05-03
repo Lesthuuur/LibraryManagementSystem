@@ -34,7 +34,6 @@ Partial Class manageLibrarian
         Me.middlename = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.username = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.password = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.manageUsersCloseButton = New Guna.UI2.WinForms.Guna2Button()
         Me.manageUsersClearButton = New Guna.UI2.WinForms.Guna2Button()
         Me.manageUsersDeleteButton = New Guna.UI2.WinForms.Guna2Button()
         Me.manageUsersUpdateButton = New Guna.UI2.WinForms.Guna2Button()
@@ -152,23 +151,6 @@ Partial Class manageLibrarian
         Me.password.HeaderText = "PASSWORD"
         Me.password.Name = "password"
         '
-        'manageUsersCloseButton
-        '
-        Me.manageUsersCloseButton.BorderRadius = 20
-        Me.manageUsersCloseButton.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.manageUsersCloseButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.manageUsersCloseButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.manageUsersCloseButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.manageUsersCloseButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.manageUsersCloseButton.FillColor = System.Drawing.Color.Goldenrod
-        Me.manageUsersCloseButton.Font = New System.Drawing.Font("Rubik SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.manageUsersCloseButton.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(7, Byte), Integer))
-        Me.manageUsersCloseButton.Location = New System.Drawing.Point(386, 6)
-        Me.manageUsersCloseButton.Name = "manageUsersCloseButton"
-        Me.manageUsersCloseButton.Size = New System.Drawing.Size(114, 38)
-        Me.manageUsersCloseButton.TabIndex = 43
-        Me.manageUsersCloseButton.Text = "CLOSE"
-        '
         'manageUsersClearButton
         '
         Me.manageUsersClearButton.BorderRadius = 20
@@ -227,11 +209,10 @@ Partial Class manageLibrarian
         Me.Guna2Panel1.Controls.Add(Me.Guna2Button1)
         Me.Guna2Panel1.Controls.Add(Me.manageUsersDeleteButton)
         Me.Guna2Panel1.Controls.Add(Me.manageUsersUpdateButton)
-        Me.Guna2Panel1.Controls.Add(Me.manageUsersCloseButton)
         Me.Guna2Panel1.Controls.Add(Me.manageUsersClearButton)
-        Me.Guna2Panel1.Location = New System.Drawing.Point(13, 254)
+        Me.Guna2Panel1.Location = New System.Drawing.Point(73, 257)
         Me.Guna2Panel1.Name = "Guna2Panel1"
-        Me.Guna2Panel1.Size = New System.Drawing.Size(628, 51)
+        Me.Guna2Panel1.Size = New System.Drawing.Size(495, 51)
         Me.Guna2Panel1.TabIndex = 44
         '
         'Guna2Button1
@@ -245,7 +226,7 @@ Partial Class manageLibrarian
         Me.Guna2Button1.FillColor = System.Drawing.Color.Goldenrod
         Me.Guna2Button1.Font = New System.Drawing.Font("Rubik SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(7, Byte), Integer))
-        Me.Guna2Button1.Location = New System.Drawing.Point(506, 7)
+        Me.Guna2Button1.Location = New System.Drawing.Point(375, 6)
         Me.Guna2Button1.Name = "Guna2Button1"
         Me.Guna2Button1.Size = New System.Drawing.Size(114, 38)
         Me.Guna2Button1.TabIndex = 44
@@ -479,7 +460,6 @@ Partial Class manageLibrarian
 
     End Sub
     Friend WithEvents manageLibrarianDgv As Guna.UI2.WinForms.Guna2DataGridView
-    Friend WithEvents manageUsersCloseButton As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents manageUsersClearButton As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents manageUsersDeleteButton As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents manageUsersUpdateButton As Guna.UI2.WinForms.Guna2Button

@@ -96,10 +96,6 @@ Public Class manageStudents
         studentIDTxtbox.SelectionStart = studentIDTxtbox.Text.Length ' Keep the cursor at the end of the text
     End Sub
 
-    Private Sub manageStudentsCloseButton_Click(sender As Object, e As EventArgs) Handles manageStudentsCloseButton.Click
-        Me.Close()
-        accounts.Show()
-    End Sub
 
     Private Sub manageStudentsClearButton_Click(sender As Object, e As EventArgs) Handles manageStudentsClearButton.Click
         clearTextbox(Me)

@@ -18,7 +18,7 @@ Public Class reviews
 
     Private Sub reviewsAddBtn_Click(sender As Object, e As EventArgs) Handles reviewsAddBtn.Click
 
-        Dim conn As New MySqlConnection("Server=127.0.0.1;Port=3307;Database=librarymanagementsystem;Uid=root;Pwd=;")
+        Dim conn As New MySqlConnection("Server=127.0.0.1;Port=3307;Database=librarymanagementsystem;Uid=lesthuuur;Pwd=admin123;")
         Dim query As String
         Dim command As New MySqlCommand
         Dim dataAdapter As New MySqlDataAdapter

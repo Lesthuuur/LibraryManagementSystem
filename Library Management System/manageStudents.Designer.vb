@@ -51,7 +51,6 @@ Partial Class manageStudents
         Me.manageStudentsDeleteButton = New Guna.UI2.WinForms.Guna2Button()
         Me.manageStudentsUpdateButton = New Guna.UI2.WinForms.Guna2Button()
         Me.manageStudentsClearButton = New Guna.UI2.WinForms.Guna2Button()
-        Me.manageStudentsCloseButton = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.passwordTxtbox = New Guna.UI2.WinForms.Guna2TextBox()
         Me.usernameTxtbox = New Guna.UI2.WinForms.Guna2TextBox()
@@ -382,7 +381,7 @@ Partial Class manageStudents
         Me.manageStudentsDeleteButton.FillColor = System.Drawing.Color.Goldenrod
         Me.manageStudentsDeleteButton.Font = New System.Drawing.Font("Rubik SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.manageStudentsDeleteButton.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(7, Byte), Integer))
-        Me.manageStudentsDeleteButton.Location = New System.Drawing.Point(36, 11)
+        Me.manageStudentsDeleteButton.Location = New System.Drawing.Point(144, 12)
         Me.manageStudentsDeleteButton.Name = "manageStudentsDeleteButton"
         Me.manageStudentsDeleteButton.Size = New System.Drawing.Size(150, 38)
         Me.manageStudentsDeleteButton.TabIndex = 37
@@ -399,7 +398,7 @@ Partial Class manageStudents
         Me.manageStudentsUpdateButton.FillColor = System.Drawing.Color.Goldenrod
         Me.manageStudentsUpdateButton.Font = New System.Drawing.Font("Rubik SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.manageStudentsUpdateButton.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(7, Byte), Integer))
-        Me.manageStudentsUpdateButton.Location = New System.Drawing.Point(255, 11)
+        Me.manageStudentsUpdateButton.Location = New System.Drawing.Point(363, 12)
         Me.manageStudentsUpdateButton.Name = "manageStudentsUpdateButton"
         Me.manageStudentsUpdateButton.Size = New System.Drawing.Size(150, 38)
         Me.manageStudentsUpdateButton.TabIndex = 36
@@ -416,33 +415,15 @@ Partial Class manageStudents
         Me.manageStudentsClearButton.FillColor = System.Drawing.Color.Goldenrod
         Me.manageStudentsClearButton.Font = New System.Drawing.Font("Rubik SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.manageStudentsClearButton.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(7, Byte), Integer))
-        Me.manageStudentsClearButton.Location = New System.Drawing.Point(474, 11)
+        Me.manageStudentsClearButton.Location = New System.Drawing.Point(582, 12)
         Me.manageStudentsClearButton.Name = "manageStudentsClearButton"
         Me.manageStudentsClearButton.Size = New System.Drawing.Size(150, 38)
         Me.manageStudentsClearButton.TabIndex = 38
         Me.manageStudentsClearButton.Text = "CLEAR"
         '
-        'manageStudentsCloseButton
-        '
-        Me.manageStudentsCloseButton.BorderRadius = 20
-        Me.manageStudentsCloseButton.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.manageStudentsCloseButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.manageStudentsCloseButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.manageStudentsCloseButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.manageStudentsCloseButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.manageStudentsCloseButton.FillColor = System.Drawing.Color.Goldenrod
-        Me.manageStudentsCloseButton.Font = New System.Drawing.Font("Rubik SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.manageStudentsCloseButton.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(7, Byte), Integer))
-        Me.manageStudentsCloseButton.Location = New System.Drawing.Point(685, 11)
-        Me.manageStudentsCloseButton.Name = "manageStudentsCloseButton"
-        Me.manageStudentsCloseButton.Size = New System.Drawing.Size(150, 38)
-        Me.manageStudentsCloseButton.TabIndex = 39
-        Me.manageStudentsCloseButton.Text = "CLOSE"
-        '
         'Guna2Panel2
         '
         Me.Guna2Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(76, Byte), Integer), CType(CType(113, Byte), Integer))
-        Me.Guna2Panel2.Controls.Add(Me.manageStudentsCloseButton)
         Me.Guna2Panel2.Controls.Add(Me.manageStudentsClearButton)
         Me.Guna2Panel2.Controls.Add(Me.manageStudentsUpdateButton)
         Me.Guna2Panel2.Controls.Add(Me.manageStudentsDeleteButton)
@@ -674,7 +655,6 @@ Partial Class manageStudents
     Friend WithEvents manageStudentsDeleteButton As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents manageStudentsUpdateButton As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents manageStudentsClearButton As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents manageStudentsCloseButton As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents passwordTxtbox As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents usernameTxtbox As Guna.UI2.WinForms.Guna2TextBox

@@ -164,7 +164,7 @@ Public Class manageLibrarian
         clearTextbox(Me)
     End Sub
 
-    Private Sub manageUsersCloseButton_Click(sender As Object, e As EventArgs) Handles manageUsersCloseButton.Click
+    Private Sub manageUsersCloseButton_Click(sender As Object, e As EventArgs)
         Me.Close()
         accounts.Show()
     End Sub
