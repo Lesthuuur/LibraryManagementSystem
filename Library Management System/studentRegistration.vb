@@ -55,7 +55,6 @@ Public Class studentRegistration
                 MessageBox.Show(ex.Message.ToString())
             End Try
             connection.Close()
-
         End If
         connection.Close()
     End Sub

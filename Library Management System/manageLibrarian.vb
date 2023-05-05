@@ -199,6 +199,8 @@ Public Class manageLibrarian
         Catch ex As Exception
             MessageBox.Show(ex.Message.ToString())
         End Try
+
+        searchTxtbox.Clear()
     End Sub
 
 End Class

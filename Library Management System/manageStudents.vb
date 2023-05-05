@@ -218,6 +218,7 @@ Public Class manageStudents
         End Try
 
         connection.Close()
+        searchTextBox.Clear()
     End Sub
 
 
